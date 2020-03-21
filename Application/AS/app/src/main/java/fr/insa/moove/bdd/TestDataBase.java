@@ -1,4 +1,4 @@
-package fr.insa.moove;
+package fr.insa.moove.bdd;
 
 import java.util.HashMap;
 import java.util.HashSet;
