@@ -3,10 +3,13 @@ package fr.insa.moove;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextView;
 
+import java.text.SimpleDateFormat;
 import java.util.UUID;
 
 import fr.insa.moove.bdd.DataBase;
@@ -14,7 +17,7 @@ import fr.insa.moove.bdd.TestDataBase;
 import fr.insa.moove.bdd.clients.ClientAccount;
 import fr.insa.moove.bdd.jo.JoEvent;
 
-public class MenuActivity extends AppCompatActivity {
+public class MenuActivity extends AppCompatActivity implements View.OnClickListener {
 
     /**
      * Database data
@@ -64,8 +67,35 @@ public class MenuActivity extends AppCompatActivity {
      */
     public void updateFutureEvents() {
         JoEvent event = client.getFutureEvent();
-        textFutureL1.setText(event.getSport() + "-" + event.getDate().toString());
+        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM");
+        textFutureL1.setText(event.getSport() + "  -  " + formatter.format(event.getDate()));
         textFutureL2.setText(event.getDescription());
     }
 
+    @Override
+    public void onClick(View view) {
+        Log.d("MOOVE","Click");
+        switch (view.getId()) {
+            case R.id.menuButton:
+                //TODO click sur menuButton
+                Log.d("MOOVE","Click on menu");
+                break;
+            case R.id.buttonTL:
+                //TODO Rechercher un horaire
+                Log.d("MOOVE","Click on TL");
+                break;
+            case R.id.buttonTR:
+                //TODO Reserver un billet
+                Log.d("MOOVE","Click on TR");
+                break;
+            case R.id.buttonBL:
+                //TODO Calendrier évenementiel
+                Log.d("MOOVE","Click on BL");
+                break;
+            case R.id.buttonBR:
+                //TODO Consulter mes billets
+                Log.d("MOOVE","Click on BR");
+                break;
+        }
+    }
 }
