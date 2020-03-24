@@ -118,9 +118,6 @@
             android:layout_marginEnd="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:clickable="true"
-            android:focusable="true"
-            android:onClick="onClick"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/buttonBLlayout"
@@ -133,6 +130,7 @@
                 android:background="@drawable/gray_rounded_shape"
                 android:clickable="true"
                 android:focusable="true"
+                android:onClick="onClick"
                 android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -147,16 +145,22 @@
                     android:layout_marginEnd="10dp"
                     android:src="@drawable/tickets" />
 
-                <TextView
-                    android:id="@+id/textBBR"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_margin="5dp"
-                    android:textColor="@color/pureBlack"
-                    android:textSize="16sp"
-                    android:text="@string/button_billets" />
             </LinearLayout>
+
+            <TextView
+                android:id="@+id/textBBR"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="@string/button_billets"
+                android:textColor="@color/pureBlack"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonBR" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -168,9 +172,6 @@
             android:layout_marginEnd="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:clickable="true"
-            android:focusable="true"
-            android:onClick="onClick"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/buttonBRlayout"
             app:layout_constraintStart_toStartOf="parent"
@@ -183,6 +184,7 @@
                 android:background="@drawable/gray_rounded_shape"
                 android:clickable="true"
                 android:focusable="true"
+                android:onClick="onClick"
                 android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -197,16 +199,22 @@
                     android:layout_marginEnd="10dp"
                     android:src="@drawable/calendrier" />
 
-                <TextView
-                    android:id="@+id/textBBL"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_margin="5dp"
-                    android:textColor="@color/pureBlack"
-                    android:textSize="16sp"
-                    android:text="@string/button_calendar" />
             </LinearLayout>
+
+            <TextView
+                android:id="@+id/textBBL"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="@string/button_calendar"
+                android:textColor="@color/pureBlack"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonBL" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -218,9 +226,6 @@
             android:layout_marginEnd="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:clickable="true"
-            android:focusable="true"
-            android:onClick="onClick"
             app:layout_constraintBottom_toTopOf="@+id/buttonBLlayout"
             app:layout_constraintEnd_toStartOf="@+id/buttonTRlayout"
             app:layout_constraintStart_toStartOf="parent"
@@ -233,6 +238,7 @@
                 android:background="@drawable/gray_rounded_shape"
                 android:clickable="true"
                 android:focusable="true"
+                android:onClick="onClick"
                 android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -247,16 +253,23 @@
                     android:layout_marginEnd="10dp"
                     android:src="@drawable/horloge" />
 
-                <TextView
-                    android:id="@+id/textBTL"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_margin="5dp"
-                    android:textColor="@color/pureBlack"
-                    android:textSize="16sp"
-                    android:text="@string/button_horaire" />
+
             </LinearLayout>
+
+            <TextView
+                android:id="@+id/textBTL"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="@string/button_horaire"
+                android:textColor="@color/pureBlack"
+                android:gravity="center"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonTL" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -267,9 +280,6 @@
             android:layout_marginEnd="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:clickable="true"
-            android:focusable="true"
-            android:onClick="onClick"
             app:layout_constraintBottom_toTopOf="@+id/buttonBRlayout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/buttonTLlayout"
@@ -282,6 +292,7 @@
                 android:background="@drawable/gray_rounded_shape"
                 android:clickable="true"
                 android:focusable="true"
+                android:onClick="onClick"
                 android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -296,16 +307,22 @@
                     android:layout_marginEnd="10dp"
                     android:src="@drawable/euro" />
 
-                <TextView
-                    android:id="@+id/textBTR"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_margin="5dp"
-                    android:textColor="@color/pureBlack"
-                    android:textSize="16sp"
-                    android:text="@string/button_reserver" />
             </LinearLayout>
+
+            <TextView
+                android:id="@+id/textBTR"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="@string/button_reserver"
+                android:textColor="@color/pureBlack"
+                android:textSize="18sp"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonTR" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
