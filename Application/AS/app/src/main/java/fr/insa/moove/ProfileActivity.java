@@ -1,4 +1,4 @@
-package fr.insa.moove.activities;
+package fr.insa.moove;
 
 import androidx.appcompat.app.AppCompatActivity;
 
