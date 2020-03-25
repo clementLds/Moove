@@ -10,14 +10,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-
-        <activity android:name="fr.insa.moove.MenuActivity">
+        <activity android:name=".activities.ProfileActivity"></activity>
+        <activity android:name=".MenuActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" android:label="@string/title_activity_menu"/>
+                <action
+                    android:name="android.intent.action.MAIN"
+                    android:label="@string/title_activity_menu" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
     </application>
 
 </manifest>
